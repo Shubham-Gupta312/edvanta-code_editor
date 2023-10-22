@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="code">
+        <div class="editor">
+            <p>
+                <label for="html">HTML</label>
+                <button class="btn">Copy</button>
+                <button class="sve">Save</button>
+            </p>
+            <textarea name="html" id="html" class="txt" cols="30" rows="10" onkeyup="run()"></textarea>
+            <p>
+                <label for="css">Css</label>
+                <button class="btn1">Copy</button>
+                <button class="sve1">Save</button>
+            </p>
+            <textarea name="css" id="css" class="txt1" cols="30" rows="10" onkeyup="run()"></textarea>
+            <p>
+                <label for="js">Javascript</label>
+                <button class="btn2">Copy</button>
+                <button class="sve2">Save</button>
+            </p>
+            <textarea name="js" id="js" class="txt2" cols="30" rows="10" onkeyup="run()"></textarea>
+        </div>
+        <div class="output">
+            <p><label for="output">Output</label></p>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+</body>
+<script src="editor.js" ></script>
+
+</html>
